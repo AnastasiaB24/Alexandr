@@ -9,10 +9,13 @@
   --primary-text-color: #7d7987;
   --active-black-color: #1f1534;
   --no-active-black-color: #8f8a99;
-  --logo-color-text: #233348;
+  /* --logo-color-text: #233348; */
 
   /* Шрифты */
   --title-font-size: 36px;
+  --subtitle-font-size: 24px;
+  --primary-text-size: 16px;
+  --primary-text-weight: 300;
 }
 
 @font-face {
@@ -26,12 +29,6 @@
   font-display: fallback;
 }
 
-/* font-display: auto;
-font-display: block;
-font-display: swap;
-font-display: fallback;
-font-display: optional; */
-
 @font-face {
   font-family: "Muli", sans-serif;
   src: url("..fonts/Muli-Regular.eot");
@@ -40,6 +37,7 @@ font-display: optional; */
     url("..fonts/Muli-Regular.ttf") format("truetype"),
     url("..fonts/Muli-Regular.svg") format("svg");
   font-weight: 400;
+  font-display: fallback;
 }
 
 @font-face {
@@ -50,23 +48,113 @@ font-display: optional; */
     url("../fonts/Mulisemibold.ttf") format("truetype"),
     url("../fonts/Mulisemibold.svg") format("svg");
   font-weight: 500;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "Muli";
   src: url("../fonts/Mulibold.eot");
-  src: local("Muli-Bold"), url("../fonts/Mulibold.woff") format("woff"),
+  src: local("Muli-Bold"), url("../fonts/Mulisemibold.woff") format("woff"),
     url("../fonts/Mulibold.woff2"), format("woff2"),
     url("../fonts/Mulibold.ttf") format("truetype"),
     url("../fonts/Mulibold.svg") format("svg");
   font-weight: 700;
+  font-display: fallback;
 }
 
 body {
   background-color: var(--white-color);
   font-family: "Muli", sans-serif;
+  font-weight: 400;
 }
 
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*Навигация в Хедере*/
+
+.nav {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--blue-color);
+}
+
+.nav .link {
+  color: var(--no-active-black-color);
+}
+
+.link.active {
+  color: var(--active-black-color);
+}
+
+/* Первая секция: заголовок h1, текст, кнопка */
+.first-title {
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+.first-section-text {
+  font-size: 21px;
+  font-weight: var(--primary-text-weight);
+  line-height: 1.53;
+  color: var(--primary-text-color);
+}
+
+/* Раздел "О нас" */
+.title-our-service {
+  font-size: var(--title-font-size);
+  line-height: 1.55;
+  text-align: center;
+}
+
+.text-our-service {
+  color: var(--primary-text-color);
+  font-weight: var(--primary-text-weight);
+  font-size: 18px;
+  line-height: 1.66px;
+  color: var(--primary-text-color);
+}
+
+.subtitle-list-service {
+  font-size: var(--subtitle-font-size);
+  line-height: 2.33;
+}
+
+.text-list-service {
+  font-size: var(--primary-text-size);
+  font-weight: var(--primary-text-weight);
+  line-height: 1.75;
+  color: var(--primary-text-color);
+}
+
+/* Оформление кнопок */
+
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 3.33; */
+  border-radius: 55px;
+  width: 200px;
+  height: 56px;
+}
+
+.btn-consult-today {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.btn-learn-more {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  border: solid 1px;
 }
