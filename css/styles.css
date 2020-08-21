@@ -23,7 +23,14 @@
       url("..fonts/Muli Light.ttf") format("truetype"),
     url("..fonts/Muli Light.svg") format("svg");
   font-weight: 300;
+  font-display: fallback;
 }
+
+/* font-display: auto;
+font-display: block;
+font-display: swap;
+font-display: fallback;
+font-display: optional; */
 
 @font-face {
   font-family: "Muli", sans-serif;
@@ -38,7 +45,7 @@
 @font-face {
   font-family: "Muli";
   src: url("..fonts/Mulisemibold.eot");
-  src: local("Muli-Semibold"), url("..fonts/Mulisemibold.woff") format("woff"),
+  src: local("Muli-Semibold"), url("../fonts/Mulisemibold.woff") format("woff"),
     url("../fonts/Mulisemibold.woff2") format("woff2"),
     url("../fonts/Mulisemibold.ttf") format("truetype"),
     url("../fonts/Mulisemibold.svg") format("svg");
