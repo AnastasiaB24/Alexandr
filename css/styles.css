@@ -1,6 +1,65 @@
-body {
+/* Общее оформление */
+
+/* Основные цвета */
+:root {
+  /* Основные цвета */
+  --white-color: #ffffff;
+  --white-color-rgba: rgba(255, 255, 255, 0.9);
+  --blue-color: #458ff6;
+  --primary-text-color: #7d7987;
+  --active-black-color: #1f1534;
+  --no-active-black-color: #8f8a99;
+  --logo-color-text: #233348;
+
+  /* Шрифты */
+  --title-font-size: 36px;
 }
 
-li {
+@font-face {
+  font-family: "Muli", sans-serif;
+  src: url("..fonts/Muli Light.eot");
+  src: local("Muli"), url("..fonts/Muli Light.woff") format("woff"),
+    url("../fonts/Mulilight.woff2") format("woff2")
+      url("..fonts/Muli Light.ttf") format("truetype"),
+    url("..fonts/Muli Light.svg") format("svg");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Muli", sans-serif;
+  src: url("..fonts/Muli-Regular.eot");
+  src: local("Muli-Regular"), url("..fonts/Muli-Regular.woff") format("woff"),
+    url("../fonts/Muliregular.woff2") format("woff2"),
+    url("..fonts/Muli-Regular.ttf") format("truetype"),
+    url("..fonts/Muli-Regular.svg") format("svg");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("..fonts/Mulisemibold.eot");
+  src: local("Muli-Semibold"), url("..fonts/Mulisemibold.woff") format("woff"),
+    url("../fonts/Mulisemibold.woff2") format("woff2"),
+    url("../fonts/Mulisemibold.ttf") format("truetype"),
+    url("../fonts/Mulisemibold.svg") format("svg");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Mulibold.eot");
+  src: local("Muli-Bold"), url("../fonts/Mulibold.woff") format("woff"),
+    url("../fonts/Mulibold.woff2"), format("woff2"),
+    url("../fonts/Mulibold.ttf") format("truetype"),
+    url("../fonts/Mulibold.svg") format("svg");
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: "Muli", sans-serif;
+}
+
+.list {
   list-style: none;
 }

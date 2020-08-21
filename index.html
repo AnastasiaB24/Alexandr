@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Virtual healthcare</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
+      <!-- Навигация  -->
       <nav>
         <a href="./index.html"><img src="./images/logo.svg" alt="Логотип" /></a>
-        <ul>
-          <li><a href="./index.html"></a> Home</li>
+        <ul class="list">
+          <li><a href="./index.html"></a>Home</li>
           <li><a href=""> Find a doctor</a></li>
           <li><a href="">Apps</a></li>
           <li><a href="">Testimonials</a></li>
@@ -20,6 +23,8 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Основное содержимое -->
     <main>
       <section>
         <h1>Virtual healthcare for you</h1>
@@ -28,14 +33,14 @@
           on mobile and online for everyone
         </p>
         <!-- Возможно, кнопка -->
-        <a href="">Consult today</a>
+        <button type="button" class="primary-btn">Consult today</button>
         <img
           src="./images/trafalgar-header-illustration-1.jpg"
-          width="700"
+          width="693"
           alt="Virtual healthcare for you"
         />
       </section>
-      <!-- Our service -->
+      <!-- Раздел "О нас" -->
       <section>
         <h2>Our services</h2>
         <p>
@@ -44,7 +49,7 @@
           doctors you can consult with us which type of service is suitable for
           your health
         </p>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/item-1.svg" alt="picture of magnifying glass" />
             <h3>Search doctor</h3>
@@ -97,8 +102,7 @@
             <p>Track and save your medical history and health data</p>
           </li>
         </ul>
-        <!--Возможно, кнопка-->
-        <a href="">Learn more</a>
+        <button type="button" class="secondary-btn">Learn more</button>
       </section>
       <section>
         <img
@@ -106,12 +110,15 @@
           width="650"
           alt="doctors are preparing medicines"
         />
+
+        <!-- Ведущие поставщики медицинских услуг -->
         <h2>Leading healthcare providers</h2>
         <p>
           Trafalgar provides progressive, and affordable healthcare, accessible
           on mobile and online for everyone. To us, it’s not just work. We take
           pride in the solutions we deliver
         </p>
+        <button type="button" class="secondary-btn">Learn more</button>
       </section>
       <section>
         <img
@@ -120,6 +127,7 @@
           alt="mobile app illustration"
         />
 
+        <!-- Раздел с загрузкой приложенияи -->
         <h2>Download our mobile apps</h2>
         <p>
           Our dedicated patient engagement app and web portal allow you to
@@ -128,25 +136,30 @@
         </p>
         <a href="" download></a>
       </section>
+
+      <!-- Секция с отзывами -->
       <section>
-        <h3>What our customer are saying</h3>
+        <h2>What our customer are saying</h2>
         <img src="./images/edward-newgave.jpg" alt="Pictured Edward Newgate" />
-        <blockquote>
+        <progress>
           “Our dedicated patient engagement app and web portal allow you to
           access information instantaneously (no tedeous form, long calls, or
           administrative hassle) and securely”
-        </blockquote>
+        </progress>
       </section>
+
+      <!-- Раздел со ссылками на статьи -->
       <section>
-        <h4>Check out our latest article</h4>
-        <ul>
+        <h3>Check out our latest article</h3>
+        <ul class="list">
           <li>
             <img
               src="./images/1.jpg"
               width="370"
               alt="The doctor gives an injection"
             />
-            <h5>Disease detection, check up in the laboratory</h5>
+
+            <h3>Disease detection, check up in the laboratory</h3>
             <p>
               In this case, the role of the health laboratory is very important
               to do a disease detection...
@@ -159,7 +172,7 @@
               width="410"
               alt="The doctor looks through the microscope"
             />
-            <h5>Herbal medicines that are safe for consumption</h5>
+            <h3>Herbal medicines that are safe for consumption</h3>
             <p>
               In this case, the role of the health laboratory is very important
               to do a disease detection...
@@ -172,7 +185,7 @@
               width="370"
               alt="Woman with cosmetic mask"
             />
-            <h5>Herbal medicines that are safe for consumption</h5>
+            <h3>Herbal medicines that are safe for consumption</h3>
             <p>
               Herbal medicine is very widely used at this time because of its
               very good for your health...
@@ -181,9 +194,11 @@
           </li>
         </ul>
         <!-- Возможно, кнопка -->
-        <a href="">View all</a>
+        <button type="button" class="secondary-btn">View all</button>
       </section>
     </main>
+
+    <!-- Футер -->
     <footer>
       <div>
         <a href="./index.html">
@@ -193,13 +208,13 @@
           Trafalgar provides progressive, and affordable healthcare, accessible
           on mobile and online for everyone
         </p>
-        <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+        <p>&#169Trafalgar PTY LTD 2020. All rights reserved</p>
       </div>
 
       <section>
-        <h5>Company</h5>
+        <h3>Company</h3>
         <nav>
-          <ul>
+          <ul class="list">
             <li>About</li>
             <li>Testimonials</li>
             <li>Find a doctor</li>
@@ -209,8 +224,8 @@
       </section>
 
       <section>
-        <h5>Region</h5>
-        <ul>
+        <h3>Region</h3>
+        <ul class="list">
           <li>Indonesia</li>
           <li>Singapore</li>
           <li>Hongkong</li>
@@ -219,8 +234,8 @@
       </section>
 
       <section>
-        <h5>Help</h5>
-        <ul>
+        <h3>Help</h3>
+        <ul class="list">
           <li>Help center</li>
           <li>Contact support</li>
           <li>Instructions</li>
